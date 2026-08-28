@@ -40,7 +40,7 @@ export function FooterWordmark() {
       const applyFill = () => {
         const clip = waveClip(state.fill, state.t);
         liquid.style.clipPath = clip;
-        liquid.style.webkitClipPath = clip;
+        liquid.style.setProperty("-webkit-clip-path", clip);
       };
 
       const fit = () => {
