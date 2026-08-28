@@ -64,10 +64,10 @@ export function Header() {
         className="fixed inset-x-0 top-0 z-40 bg-brand-black"
         onMouseLeave={scheduleClose}
       >
-        <div className="relative mx-auto grid h-[var(--header-height)] max-w-[1440px] grid-cols-[1fr_auto_1fr] items-center px-5 lg:px-10">
+        <div className="relative mx-auto flex h-[var(--header-height)] max-w-[1440px] items-center justify-between px-5 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:px-10">
           <Link
             href="/"
-            className="relative z-10 justify-self-start"
+            className="relative z-10 shrink-0 justify-self-start lg:col-start-1"
             aria-label="Dive Pros home"
           >
             <Image
@@ -81,7 +81,7 @@ export function Header() {
           </Link>
 
           <nav
-            className="relative z-10 hidden h-full lg:flex"
+            className="relative z-10 hidden h-full lg:col-start-2 lg:flex"
             aria-label="Primary"
           >
             <ul className="flex h-full items-center gap-1">
@@ -125,7 +125,7 @@ export function Header() {
             </ul>
           </nav>
 
-          <div className="relative z-10 flex items-center justify-self-end gap-3">
+          <div className="relative z-10 ml-auto flex shrink-0 items-center gap-3 lg:col-start-3 lg:ml-0 lg:justify-self-end">
             <div className="hidden lg:block">
               <Button href="/contact">Contact Us</Button>
             </div>
