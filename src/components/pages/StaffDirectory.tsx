@@ -17,7 +17,7 @@ export function StaffDirectory() {
               <p className="text-xs font-medium uppercase tracking-[0.18em] text-brand-white/45 lg:col-span-4">
                 {person.role}
               </p>
-              <p className="text-sm font-bold uppercase tracking-wide text-brand-white lg:col-span-3">
+              <p className="text-sm font-bold tracking-tight text-brand-white lg:col-span-3">
                 {person.name}
               </p>
               <a

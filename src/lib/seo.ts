@@ -11,29 +11,31 @@ export const DEFAULT_OG_IMAGE = {
   url: "/hero.jpg",
   width: 4502,
   height: 3001,
-  alt: "Scuba divers underwater with sunlight streaming from the surface. Dive Pros, Pensacola",
+  alt: "Divers underwater with sunlight streaming from the surface. Dive Pros, Pensacola",
 } as const;
 
-const HOME_TITLE = "Dive Pros | PADI Scuba Shop in Pensacola, FL";
+const HOME_TITLE = "Dive Pros | PADI SCUBA Shop in Pensacola, FL";
 const HOME_DESCRIPTION =
-  "PADI scuba shop in Pensacola since 1988. Open Water certification, Nitrox, Rescue Diver, gear service, air fills, and USS Oriskany charters. 12′ indoor heated training tank.";
+  "PADI SCUBA shop in Pensacola. Open Water certification, Nitrox, Rescue Diver, gear service, air fills, and USS Oriskany charters. 12′ indoor heated training tank.";
 
 /** Search-facing titles. On-page H1s stay editorial; these populate <title> and Open Graph. */
 const seoTitles: Record<string, string> = {
   "/": HOME_TITLE,
-  "/courses": "PADI Scuba Courses in Pensacola",
+  "/courses": "PADI SCUBA Courses in Pensacola",
   "/courses/discover-scuba": "PADI Discover Scuba Diving in Pensacola",
   "/courses/open-water": "PADI Open Water Certification in Pensacola",
-  "/courses/schedule": "Scuba Class Schedule in Pensacola",
+  "/courses/schedule": "SCUBA Class Schedule in Pensacola",
   "/courses/advanced-open-water": "PADI Advanced Open Water in Pensacola",
   "/courses/nitrox": "PADI Nitrox Course in Pensacola",
   "/courses/rescue-diver": "PADI Rescue Diver Course in Pensacola",
   "/courses/specialties": "PADI Specialty Diver Courses in Pensacola",
   "/courses/master-diver": "PADI Master Scuba Diver in Pensacola",
   "/courses/divemaster": "PADI Divemaster & Instructor Course in Pensacola",
+  "/courses/technical": "Technical Diving Courses in Pensacola",
+  "/courses/adaptive": "Adaptive SCUBA Training in Pensacola",
   "/dive": "Pensacola Dive Sites & Gulf Charters",
-  "/dive/charters": "Pensacola Scuba Dive Charters",
-  "/dive/guided-trips": "Guided Scuba Dives in Pensacola",
+  "/dive/charters": "Pensacola SCUBA Dive Charters",
+  "/dive/guided-trips": "Guided SCUBA Dives in Pensacola",
   "/dive/shore-dives": "Pensacola Beach & Shore Dives",
   "/dive/nearshore": "Nearshore Pensacola Wrecks & Reefs",
   "/dive/midshore": "Midshore Pensacola Dive Sites",
@@ -41,16 +43,19 @@ const seoTitles: Record<string, string> = {
   "/dive/artificial-reefs": "Pensacola Artificial Reefs",
   "/dive/uss-oriskany": "Dive the USS Oriskany in Pensacola",
   "/dive/all-sites": "All Pensacola Dive Sites",
+  "/dive/spearfishing": "Spearfishing the Northern Gulf",
   "/shop": "Dive Shop & Equipment Service in Pensacola",
-  "/shop/air-fills": "Scuba Air & Nitrox Fills in Pensacola",
-  "/shop/repairs": "Scuba Equipment Repair in Pensacola",
-  "/shop/rentals": "Scuba Gear Rental in Pensacola",
-  "/shop/tank-inspection": "Scuba Tank Inspection in Pensacola",
-  "/shop/gear-service": "Scuba Gear Service in Pensacola",
-  "/about": "Pensacola PADI Dive Shop Since 1988",
+  "/shop/air-fills": "SCUBA Air & Nitrox Fills in Pensacola",
+  "/shop/repairs": "SCUBA Equipment Repair in Pensacola",
+  "/shop/rentals": "SCUBA Gear Rental in Pensacola",
+  "/shop/tank-inspection": "SCUBA Tank Inspection in Pensacola",
+  "/shop/gear-service": "SCUBA Gear Service in Pensacola",
+  "/about": "Pensacola PADI Dive Shop",
   "/about/facilities": "Indoor Training Tank & Shop Facilities",
+  "/about/staff": "Dive Pros Instructors & Staff",
+  "/about/links": "Dive Forms, Tides & Resources",
   "/contact": "Contact the Pensacola Dive Shop",
-  "/gallery": "Pensacola Scuba & Gulf Diving Gallery",
+  "/gallery": "Pensacola SCUBA & Gulf Diving Gallery",
 };
 
 const HUB_PATHS = new Set(["/courses", "/dive", "/shop", "/about", "/contact"]);
@@ -71,6 +76,8 @@ const COURSE_PATHS = new Set([
   "/courses/specialties",
   "/courses/master-diver",
   "/courses/divemaster",
+  "/courses/technical",
+  "/courses/adaptive",
 ]);
 
 const SERVICE_PATHS = new Set([
@@ -251,7 +258,7 @@ export function siteJsonLd(): JsonLd {
         image: [
           absoluteUrl("/hero.jpg"),
           absoluteUrl("/photos/storefront.jpg"),
-          absoluteUrl("/photos/facility-pool.jpg"),
+          absoluteUrl("/photos/aqua-pair.jpg"),
           absoluteUrl("/photos/shop-floor.jpg"),
         ],
         logo: {
@@ -301,7 +308,7 @@ export function siteJsonLd(): JsonLd {
           },
         ],
         knowsAbout: [
-          "PADI scuba training",
+          "PADI SCUBA training",
           "Open Water certification",
           "Nitrox",
           "USS Oriskany",
@@ -424,7 +431,7 @@ function oriskanyJsonLd(page: EditorialPageData): JsonLd {
       addressCountry: "US",
     },
     isAccessibleForFree: false,
-    touristType: "Scuba divers",
+    touristType: "SCUBA divers",
   };
 }
 

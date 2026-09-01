@@ -11,14 +11,12 @@ export function Process() {
         </Reveal>
         <div className="mt-10 grid gap-10 lg:grid-cols-12 lg:items-end">
           <Reveal className="lg:col-span-7">
-            <h2 className="display text-brand-white">
-              How a Gulf diver actually gets built.
-            </h2>
+            <h2 className="display text-brand-white">How it works</h2>
           </Reveal>
           <Reveal delay={0.08} className="lg:col-span-5">
             <p className="max-w-md text-base leading-relaxed text-brand-white/70">
-              Diagnose first. Train second. Dive always. The same sequence we
-              have used since 1988, whether you are ten or going pro.
+              You walk in, you train here, you dive local sites. Same sequence
+              whether you&apos;re ten or going pro.
             </p>
           </Reveal>
         </div>

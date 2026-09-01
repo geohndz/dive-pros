@@ -34,15 +34,15 @@ export const navItems: NavItem[] = [
     viewAll: "All courses",
     columns: [
       {
-        title: "Getting Started",
+        title: "Getting started",
         links: [
           { label: "Discover Scuba", href: "/courses/discover-scuba" },
           { label: "Open Water", href: "/courses/open-water" },
-          { label: "Schedule a Class", href: "/courses/schedule" },
+          { label: "Schedule a class", href: "/courses/schedule" },
         ],
       },
       {
-        title: "Continue Learning",
+        title: "Continue learning",
         links: [
           { label: "Advanced Open Water", href: "/courses/advanced-open-water" },
           { label: "Rescue Diver", href: "/courses/rescue-diver" },
@@ -55,6 +55,7 @@ export const navItems: NavItem[] = [
           { label: "Specialties", href: "/courses/specialties" },
           { label: "Master Diver", href: "/courses/master-diver" },
           { label: "Divemaster", href: "/courses/divemaster" },
+          { label: "Technical", href: "/courses/technical" },
         ],
       },
     ],
@@ -62,7 +63,7 @@ export const navItems: NavItem[] = [
       label: "Start here",
       title: "Open Water",
       description: "$389. New classes every week. 12′ indoor tank on site.",
-      cta: { label: "Open Water Course", href: "/courses/open-water" },
+      cta: { label: "View Open Water", href: "/courses/open-water" },
       image: "/photos/pool-orange.jpg",
       imageAlt: "Open water student standing in kit in the pool",
     },
@@ -74,18 +75,19 @@ export const navItems: NavItem[] = [
     viewAll: "All dive sites",
     columns: [
       {
-        title: "Dive Experiences",
+        title: "Dive experiences",
         links: [
           { label: "Charters", href: "/dive/charters" },
           { label: "Guided Trips", href: "/dive/guided-trips" },
+          { label: "Spearfishing", href: "/dive/spearfishing" },
         ],
       },
       {
-        title: "Dive Sites",
+        title: "Dive sites",
         links: [
           { label: "Shore Dives", href: "/dive/shore-dives" },
           { label: "USS Oriskany", href: "/dive/uss-oriskany" },
-          { label: "All Dive Sites", href: "/dive/all-sites" },
+          { label: "All dive sites", href: "/dive/all-sites" },
         ],
       },
       {
@@ -94,7 +96,7 @@ export const navItems: NavItem[] = [
           { label: "Nearshore", href: "/dive/nearshore" },
           { label: "Midshore", href: "/dive/midshore" },
           { label: "Offshore", href: "/dive/offshore" },
-          { label: "Artificial Reefs", href: "/dive/artificial-reefs" },
+          { label: "Artificial reefs", href: "/dive/artificial-reefs" },
         ],
       },
     ],
@@ -131,9 +133,9 @@ export const navItems: NavItem[] = [
     ],
     featured: {
       label: "The bench",
-      title: "Life support, serviced right",
+      title: "Equipment service",
       description: "Factory-trained techs. Usually back in the water in under a week.",
-      cta: { label: "Equipment Service", href: "/shop/repairs" },
+      cta: { label: "View service pricing", href: "/shop/repairs" },
       image: "/photos/fill-station.jpg",
       imageAlt: "Nitrox blending panel in the service bay",
     },
@@ -147,15 +149,17 @@ export const navItems: NavItem[] = [
       {
         title: "About Dive Pros",
         links: [
-          { label: "Our Story", href: "/about" },
+          { label: "Our story", href: "/about" },
           { label: "Facilities", href: "/about/facilities" },
+          { label: "Our staff", href: "/about/staff" },
+          { label: "Links", href: "/about/links" },
         ],
       },
     ],
     featured: {
-      label: "Since 1988",
+      label: "The shop",
       title: "Who are these guys?",
-      description: "Pensacola and Gulf Breeze: the full-service shop on this coast.",
+      description: "2,000 sq ft of retail, two classrooms, and a 54,000-gallon indoor pool.",
       cta: { label: "Our story", href: "/about" },
       image: "/photos/shop-floor.jpg",
       imageAlt: "Dive Pros retail floor from the front of the shop",

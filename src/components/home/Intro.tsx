@@ -20,10 +20,9 @@ export function Intro() {
           </Reveal>
           <Reveal delay={0.1} className="mt-8 max-w-xl">
             <p className="text-base leading-relaxed text-brand-white/80 sm:text-lg">
-              The Dive Pros have been serving Florida Panhandle divers and
-              the Pensacola and Gulf Breeze communities since 1988. Award-winning
-              training. A real service bay. Retail that can actually kit you.
-              One shop. The Gulf as your classroom.
+              You train in a 54,000-gallon indoor pool, 12 feet deep and heated.
+              Two classrooms sit a few steps from the water. The Gulf is the
+              rest of the course.
             </p>
             <p className="mt-6 text-sm font-medium uppercase tracking-[0.18em] text-brand-white/45">
               Pensacola, Florida

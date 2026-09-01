@@ -12,7 +12,7 @@ export function Visit() {
         </Reveal>
 
         <Reveal className="mt-10">
-          <h2 className="display">Come see us. Then go under.</h2>
+          <h2 className="display">7203 W. Hwy. 98</h2>
         </Reveal>
 
         <div className="mt-16 grid gap-12 border-t border-brand-black/15 pt-12 lg:grid-cols-12">
@@ -35,7 +35,7 @@ export function Visit() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Directions
+                Get directions
               </Button>
             </div>
           </div>

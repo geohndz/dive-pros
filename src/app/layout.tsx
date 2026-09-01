@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Oxanium } from "next/font/google";
 import { Header } from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
+import { WaterDepth } from "@/components/motion/WaterDepth";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, homeDescription, siteJsonLd } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -14,7 +15,7 @@ const oxanium = Oxanium({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#111111",
+  themeColor: "#122440",
   width: "device-width",
   initialScale: 1,
 };
@@ -22,7 +23,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Dive Pros | PADI Scuba Shop in Pensacola, FL",
+    default: "Dive Pros | PADI SCUBA Shop in Pensacola, FL",
     template: "%s | Dive Pros",
   },
   description: homeDescription,
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   authors: [{ name: site.name, url: SITE_URL }],
   creator: site.name,
   publisher: site.name,
-  category: "Scuba diving",
+  category: "SCUBA diving",
   referrer: "origin-when-cross-origin",
   formatDetection: {
     email: false,
@@ -53,20 +54,20 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: site.name,
-    title: "Dive Pros | PADI Scuba Shop in Pensacola, FL",
+    title: "Dive Pros | PADI SCUBA Shop in Pensacola, FL",
     description: homeDescription,
     images: [
       {
         url: "/hero.jpg",
         width: 4502,
         height: 3001,
-        alt: "Scuba divers underwater with sunlight streaming from the surface. Dive Pros, Pensacola",
+        alt: "Divers underwater with sunlight streaming from the surface. Dive Pros, Pensacola",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dive Pros | PADI Scuba Shop in Pensacola, FL",
+    title: "Dive Pros | PADI SCUBA Shop in Pensacola, FL",
     description: homeDescription,
     images: ["/hero.jpg"],
   },
@@ -93,6 +94,7 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+        <WaterDepth />
         <Header />
         <main id="main">{children}</main>
         <Footer />

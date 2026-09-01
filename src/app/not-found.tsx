@@ -16,12 +16,10 @@ export default function NotFound() {
         <p className="text-[0.7rem] font-medium uppercase tracking-[0.22em] text-brand-yellow">
           404
         </p>
-        <h1 className="display mt-6 text-brand-white">
-          Off the shot line.
-        </h1>
-        <p className="mt-6 max-w-md text-brand-white/70">
-          That page is not on this chart. Head back to the surface.
-        </p>
+          <h1 className="display mt-6 text-brand-white">Off the shot line</h1>
+          <p className="mt-6 max-w-md text-brand-white/70">
+            That page isn&apos;t on this chart. Head back to the surface.
+          </p>
         <div className="mt-10 flex flex-wrap gap-3">
           <Button href="/">Home</Button>
           <Button href="/contact" variant="outline">

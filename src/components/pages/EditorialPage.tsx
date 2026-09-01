@@ -22,6 +22,7 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
     Boolean(page.sites?.length) ||
     Boolean(page.rateGroups?.length) ||
     Boolean(page.operators?.length) ||
+    Boolean(page.catalog?.items.length) ||
     Boolean(page.tables?.length) ||
     Boolean(page.related?.length) ||
     Boolean(page.footnote) ||
@@ -140,6 +141,16 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
                   className="border-b border-white/10 py-10 lg:border-b-0 lg:border-r lg:border-white/10 lg:px-8 lg:py-12 lg:first:pl-0 lg:last:border-r-0 lg:last:pr-0"
                 >
                   <Reveal delay={index * 0.05}>
+                    <div className="relative mb-6 aspect-[16/10] overflow-hidden bg-brand-white/5">
+                      <Image
+                        src={module.image}
+                        alt={module.imageAlt}
+                        fill
+                        className="object-cover"
+                        style={{ objectPosition: objectPosition(module.image) }}
+                        sizes="(min-width: 1024px) 30vw, 100vw"
+                      />
+                    </div>
                     <p className="text-[0.7rem] font-medium uppercase tracking-[0.22em] text-brand-yellow">
                       {module.index}
                     </p>
@@ -154,13 +165,14 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
                         {module.list.map((item) => (
                           <li
                             key={item}
-                            className="border-b border-white/10 py-3 text-sm font-medium uppercase tracking-wide text-brand-white"
+                            className="border-b border-white/10 py-3 text-sm font-medium tracking-tight text-brand-white"
                           >
                             {item}
                           </li>
                         ))}
                       </ul>
                     ) : null}
+                    <RequiredTags tags={module.tags} />
                   </Reveal>
                 </li>
               ))}
@@ -185,7 +197,7 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
                 section.heading ? "lg:col-span-8" : "lg:col-span-8 lg:col-start-5"
               }`}
             >
-              {section.body.map((paragraph) => (
+              {section.body?.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
               {section.list && !section.cards ? (
@@ -193,7 +205,7 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
                   {section.list.map((item) => (
                     <li
                       key={item}
-                      className="border-b border-white/10 py-3 text-sm font-medium uppercase tracking-wide text-brand-white"
+                      className="border-b border-white/10 py-3 text-sm font-medium tracking-tight text-brand-white"
                     >
                       {item}
                     </li>
@@ -205,6 +217,7 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
                   <ServiceCards cards={section.cards} />
                 </div>
               ) : null}
+              <RequiredTags tags={section.tags} />
             </div>
           </Container>
           {section.after?.length ? (
@@ -279,13 +292,13 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
                   key={`${rate.item}-${rate.price}`}
                   className="grid grid-cols-12 items-baseline gap-4 border-b border-white/10 py-4"
                 >
-                  <span className="col-span-7 text-sm font-medium uppercase tracking-wide text-brand-white sm:col-span-6">
+                  <span className="col-span-7 text-sm font-medium tracking-tight text-brand-white sm:col-span-6">
                     {rate.item}
                   </span>
-                  <span className="col-span-5 text-right text-sm font-bold uppercase tracking-wide text-brand-yellow sm:col-span-2">
+                  <span className="col-span-5 text-right text-sm font-bold tracking-tight text-brand-yellow sm:col-span-2">
                     {rate.price}
                   </span>
-                  <span className="col-span-12 text-xs uppercase tracking-wide text-brand-white/40 sm:col-span-4 sm:text-right">
+                  <span className="col-span-12 text-xs tracking-tight text-brand-white/40 sm:col-span-4 sm:text-right">
                     {rate.note ?? ""}
                   </span>
                 </li>
@@ -294,6 +307,41 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
           </Container>
         </section>
       ))}
+
+      {page.catalog?.items.length ? (
+        <section className="border-t border-white/10">
+          <Container className="py-16 lg:py-24">
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-white/40">
+              {page.catalog.heading ?? "Courses"}
+            </p>
+            <ul className="mt-10">
+              {page.catalog.items.map((item) => (
+                <li
+                  key={item.title}
+                  className="grid gap-6 border-t border-white/10 py-12 lg:grid-cols-12"
+                >
+                  <div className="lg:col-span-4">
+                    <h2 className="text-xl font-bold uppercase tracking-wide text-brand-white sm:text-2xl">
+                      {item.title}
+                    </h2>
+                    {item.meta ? (
+                      <p className="mt-3 text-sm font-medium tracking-tight text-brand-yellow">
+                        {item.meta}
+                      </p>
+                    ) : null}
+                  </div>
+                  <div className="lg:col-span-8">
+                    <p className="text-base leading-relaxed text-brand-white/70">
+                      {item.body}
+                    </p>
+                    <RequiredTags tags={item.tags} />
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </Container>
+        </section>
+      ) : null}
 
       {page.operators?.length ? (
         <section className="border-t border-white/10">
@@ -311,7 +359,7 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
                     <h2 className="text-xl font-bold uppercase tracking-wide text-brand-white sm:text-2xl">
                       {operator.name}
                     </h2>
-                    <p className="mt-3 text-sm font-medium uppercase tracking-wide text-brand-yellow">
+                    <p className="mt-3 text-sm font-medium tracking-tight text-brand-yellow">
                       {operator.contact}
                     </p>
                   </div>
@@ -419,5 +467,27 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
         </section>
       ) : null}
     </article>
+  );
+}
+
+function RequiredTags({ tags }: { tags?: string[] }) {
+  if (!tags?.length) return null;
+
+  return (
+    <div className="mt-5 flex flex-wrap items-center gap-2">
+      <p className="text-[0.65rem] font-medium uppercase tracking-[0.18em] text-brand-white/45">
+        Required
+      </p>
+      <ul className="flex flex-wrap gap-2">
+        {tags.map((tag) => (
+          <li
+            key={tag}
+            className="bg-brand-yellow/15 px-2.5 py-1 text-[0.65rem] font-medium uppercase tracking-[0.16em] text-brand-yellow"
+          >
+            {tag}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }

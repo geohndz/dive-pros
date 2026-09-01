@@ -7,7 +7,10 @@ export type PageModule = {
   index: string;
   title: string;
   body: string;
+  image: string;
+  imageAlt: string;
   list?: string[];
+  tags?: string[];
 };
 
 export type PageSite = {
@@ -33,6 +36,13 @@ export type PageOperator = {
   name: string;
   contact: string;
   body: string;
+};
+
+export type PageDetailCard = {
+  title: string;
+  meta?: string;
+  body: string;
+  tags?: string[];
 };
 
 export type PagePath = {
@@ -69,14 +79,19 @@ export type EditorialPageData = {
   modules?: PageModule[];
   sections?: Array<{
     heading?: string;
-    body: string[];
+    body?: string[];
     list?: string[];
     cards?: PageCard[];
     after?: string[];
+    tags?: string[];
   }>;
   sites?: PageSite[];
   rateGroups?: PageRateGroup[];
   operators?: PageOperator[];
+  catalog?: {
+    heading?: string;
+    items: PageDetailCard[];
+  };
   paths?: PagePath[];
   tables?: Array<{
     heading: string;

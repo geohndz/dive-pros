@@ -10,7 +10,7 @@ export const shopPages: EditorialPageData[] = [
     image: "/photos/shop-floor.jpg",
     imageAlt: "Dive Pros retail floor: display cases, wetsuits, and the service counter",
     intro:
-      "Over 2,000 square feet of retail. Authorized dealer for SCUBAPRO and Aqua Lung / Apeks, including military, public safety, and law enforcement, plus computers, wetsuits, cameras, bags, and spearfishing. If we sell it, we can service it.",
+      "Over 2,000 square feet of retail. Authorized dealer for SCUBAPRO and Aqua Lung / Apeks, including military, public safety, and law enforcement, plus computers, wetsuits, cameras, bags, and spearfishing. If we sell it, we can service it. Ask about the Premier Rental Fleet: current SCUBAPRO and Aqua Lung kits, each with a dive computer.",
     stats: [
       { value: "2,000+", label: "Sq ft of retail" },
       { value: "4500", label: "PSI fill capability" },
@@ -58,7 +58,7 @@ export const shopPages: EditorialPageData[] = [
     image: "/photos/fill-station.jpg",
     imageAlt: "Enriched Air Nitrox blending panel and fill whips at Dive Pros",
     intro:
-      "The finest gas blending and fill station in the southeast. Multiple large-volume compressors, hyper filtration, and huge storage. Clean air to 4500 psi, plus the base gas for custom Enriched Air. An oxygen-clean Haskell booster handles technical blends and 100% oxygen for emergency supplies.",
+      "Multiple large-volume compressors, hyper filtration, and banked storage. Clean air to 4500 psi, plus the base gas for custom Enriched Air. An oxygen-clean Haskell booster handles technical blends and 100% oxygen for emergency supplies.",
     stats: [
       { value: "10,000+", label: "Cu ft premixed Nitrox on hand" },
       { value: "4500", label: "PSI capability" },
@@ -169,21 +169,21 @@ export const shopPages: EditorialPageData[] = [
       { label: "Rentals", href: "/shop/rentals" },
     ],
     footnote:
-      "Prices include lubricants, cleaning solutions, and incidental repair materials. Replacement parts are not included. Brands we service include Scubapro, Aqua Lung, Apeks, Dive Rite, Sherwood, Genesis, and more.",
+      "Prices include lubricants, cleaning solutions, and incidental repair materials. Replacement parts are not included. Brands we service include SCUBAPRO, Aqua Lung, Apeks, Dive Rite, Sherwood, Genesis, and more.",
   },
   {
     path: "/shop/rentals",
     title: "Equipment rental",
     kicker: "Services",
     description:
-      "SCUBA rentals at Dive Pros: Scubapro and Aqua Lung kits, air or Nitrox cylinders, and packages for charters.",
+      "SCUBA rentals at Dive Pros: SCUBAPRO and Aqua Lung kits, air or Nitrox cylinders, and packages for charters.",
     image: "/photos/boat-fins.jpg",
     imageAlt: "Rental fins hanging on a dive boat rail",
     intro:
-      "Traveling for a local charter, or still deciding what to buy? The rental locker is Scubapro and Aqua Lung across a wide size range. Cylinders in air or Nitrox, 63 to 120 cubic feet, steel or aluminum, yoke or DIN.",
+      "Traveling for a local charter, or still deciding what to buy? The rental locker is SCUBAPRO and Aqua Lung across a wide size range. Cylinders in air or Nitrox, 63 to 120 cubic feet, steel or aluminum, yoke or DIN.",
     stats: [
       { value: "$44.95", label: "Standard SCUBA package" },
-      { value: "$69.95", label: "Premium package" },
+      { value: "$69.95", label: "Full kit package" },
     ],
     sections: [
       {
@@ -230,14 +230,14 @@ export const shopPages: EditorialPageData[] = [
             note: "(2) AL80 air, BCD, regulator, weights",
           },
           {
-            item: "Premium SCUBA package",
+            item: "Full kit SCUBA package",
             price: "$69.95",
-            note: "(2) AL80 air, premium BCD, premium balanced regulator, weights",
+            note: "(2) AL80 air, higher-end BCD, balanced regulator, weights",
           },
           {
             item: "Snorkeling package",
             price: "$25",
-            note: "Mask, snorkel, fins: premium dive quality",
+            note: "Mask, snorkel, fins",
           },
         ],
       },

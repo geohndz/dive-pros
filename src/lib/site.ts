@@ -44,17 +44,17 @@ export const hours = {
 
 export const marqueeItems = [
   "Open Water",
-  "Advanced",
+  "Advanced Open Water",
   "Nitrox",
-  "Rescue",
+  "Rescue Diver",
   "Specialties",
   "Divemaster",
-  "Gas Fills",
-  "Equipment Service",
+  "Gas fills",
+  "Equipment service",
   "Rentals",
   "Charters",
   "USS Oriskany",
-  "Since 1988",
+  "54,000 gallons",
 ];
 
 export const stats = [
@@ -67,39 +67,39 @@ export const stats = [
 export const offerings = [
   {
     index: "001",
-    title: "Pro dive training",
+    title: "Training",
     href: "/courses",
-    cta: "Explore courses",
-    image: "/photos/facility-pool.jpg",
-    imageAlt: "Indoor heated training tank at Dive Pros",
-    body: "PADI from your first breath to instructor. On-site 12′ indoor heated tank, classrooms a few steps away, new classes every week.",
+    cta: "View courses",
+    image: "/photos/aqua-pair.jpg",
+    imageAlt: "Buddy pair in clear water during a training dive",
+    body: "You start in a 12′ indoor heated tank. Classrooms are a few steps away. New Open Water classes start every week.",
   },
   {
     index: "002",
-    title: "Service & tech",
+    title: "Service",
     href: "/shop/repairs",
-    cta: "See service",
+    cta: "View service pricing",
     image: "/photos/fill-station.jpg",
     imageAlt: "Enriched Air Nitrox fill station at Dive Pros",
-    body: "SCUBA is life support. Full-time factory-trained technicians service most major lines. Honest assessment, usually back in the water in under a week.",
+    body: "SCUBA is life support. Factory-trained technicians service most major lines. Most kits are back in the water in under a week.",
   },
   {
     index: "003",
-    title: "Dive charters",
+    title: "Charters",
     href: "/dive/charters",
     cta: "Plan a charter",
     image: "/photos/boat-fins.jpg",
     imageAlt: "Fins hanging on a charter boat rail over the Gulf",
-    body: "Wrecks and reefs of Pensacola, daily weather permitting. We connect you with local boats, including the world’s largest artificial reef.",
+    body: "Local boats run wrecks and reefs when the weather allows. That includes the 911-foot USS Oriskany.",
   },
   {
     index: "004",
-    title: "Local dive sites",
+    title: "Dive sites",
     href: "/dive",
-    cta: "View sites",
+    cta: "See dive sites",
     image: "/photos/baitball.jpg",
     imageAlt: "Diver approaching a dense school of fish in open water",
-    body: "Shore dives to 50′, nearshore wrecks, midshore reefs, and offshore walls. Pensacola is one of Florida’s best-kept dive coasts.",
+    body: "Shore dives to 50′, nearshore wrecks, midshore reefs, and 20+ miles offshore. From Fort Pickens to the Mighty O.",
   },
 ];
 
@@ -157,7 +157,7 @@ export const courses = [
 export const diveSites = [
   {
     index: "01",
-    title: "Shore / Beach",
+    title: "Shore / beach",
     href: "/dive/shore-dives",
     range: "From the sand",
     depth: "10′ – 50′",
@@ -197,22 +197,22 @@ export const processSteps = [
   {
     index: "001",
     title: "Talk to us",
-    body: "Walk in or call. No pressure. An honest conversation about your goals, schedule, and where to start.",
+    body: "Walk in or call. Tell us your goals, your schedule, and whether you've ever been underwater.",
   },
   {
     index: "002",
     title: "Learn on site",
-    body: "eLearning at your pace, then pool and classroom here. 54,000 gallons, 12′ deep, heated, indoor, steps from the shop.",
+    body: "eLearning at your pace. Then pool and classroom here: 54,000 gallons, 12′ deep, heated, indoor.",
   },
   {
     index: "003",
     title: "Dive the Gulf",
-    body: "Four open-water dives over two days on local sites. Gear provided. Weather, tides, and safety set the clock, not a rush.",
+    body: "Four open-water dives over two days on local sites. Gear is provided. Weather and tides set the clock.",
   },
   {
     index: "004",
-    title: "Stay in the family",
-    body: "Fills, service, rentals, charters, specialties. The shop that certified you is the community that keeps you diving.",
+    title: "Keep diving",
+    body: "Fills, service, rentals, charters, specialties. The shop that certified you is still here when you need a wrench or a boat.",
   },
 ];
 

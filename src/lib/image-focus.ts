@@ -25,9 +25,10 @@ export const imageFocus: Record<string, string> = {
   "/photos/boat-fins.jpg": "48% 50%",
   "/photos/shaka.jpg": "52% 42%",
   "/photos/wreck-hatch.jpg": "58% 48%",
-  "/photos/facility-pool.jpg": "48% 55%",
   "/photos/shop-floor.jpg": "50% 42%",
   "/photos/fill-station.jpg": "50% 45%",
+  "/photos/oriskany/03-aerial.jpg": "50% 45%",
+  "/photos/oriskany/07-descent.jpg": "50% 55%",
 };
 
 export function objectPosition(src: string) {

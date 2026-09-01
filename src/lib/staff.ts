@@ -40,4 +40,9 @@ export const staffContacts: StaffContact[] = [
     name: "Jason Painter",
     email: "jsdiveinstruction@gmail.com",
   },
+  {
+    role: "Cave / Technical Instructor",
+    name: "Heather Armstrong",
+    email: "heatherarmstrong@mac.com",
+  },
 ];

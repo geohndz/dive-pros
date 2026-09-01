@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --brand-black: #111111;
+  --brand-navy-surface: #122440;
+  --brand-navy-abyss: #02060f;
+  --brand-black: var(--brand-navy-surface);
   --brand-white: #ffffff;
   --brand-yellow: #fffa3b;
   --brand-gray: #5e5e5e;

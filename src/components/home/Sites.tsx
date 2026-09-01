@@ -15,9 +15,7 @@ export function Sites() {
           <SectionIndex index="04" label="Dive sites" />
         </Reveal>
         <Reveal className="mt-10 max-w-4xl">
-          <h2 className="display text-brand-white">
-            From the beach to the Mighty O.
-          </h2>
+          <h2 className="display text-brand-white">Local diving</h2>
         </Reveal>
       </Container>
 
@@ -67,24 +65,24 @@ export function Sites() {
         <div className="absolute inset-0 bg-gradient-to-r from-brand-black/80 via-brand-black/45 to-brand-black/20" />
         <Container className="relative flex min-h-[70vh] flex-col justify-end py-16 lg:py-24">
           <p className="text-[0.7rem] font-medium uppercase tracking-[0.22em] text-brand-yellow">
-            05 · USS Oriskany · CV-34
+            05 · CV-34 · May 17, 2006
           </p>
-          <h3 className="display mt-4 max-w-4xl text-brand-white">
-            The Great Carrier Reef.
+          <p className="display-stat mt-4 text-brand-yellow">911 ft</p>
+          <h3 className="display mt-3 max-w-4xl text-brand-white">
+            USS Oriskany
           </h3>
           <p className="mt-6 max-w-lg text-base leading-relaxed text-brand-white/80">
-            911 feet of aircraft carrier, sunk 26.5 NM southeast of Pensacola
-            Pass. Island at 84′. Sand at 212′. World-class, and not a first
-            dive.
+            Sunk 26.5 NM southeast of Pensacola Pass. Island at 84′. Sand at
+            212′. Not a first dive.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-xs font-medium uppercase tracking-[0.18em] text-brand-white/70">
-            <span>May 17, 2006</span>
             <span>26.5 NM</span>
-            <span>84′ – 212′</span>
+            <span>84′ island</span>
+            <span>212′ sand</span>
           </div>
           <div className="mt-8">
             <Button href="/dive/uss-oriskany" variant="outline">
-              Dive the Mighty O
+              Explore the Oriskany
             </Button>
           </div>
         </Container>

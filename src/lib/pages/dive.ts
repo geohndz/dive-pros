@@ -69,12 +69,12 @@ export const divePages: EditorialPageData[] = [
     image: "/photos/boat-fins.jpg",
     imageAlt: "Fins staged on a charter boat rail",
     intro:
-      "Nothing beats a day on the water with friends: wrecks, artificial reefs, live bottom. Dive Pros does not own or operate these charters. Policies and prices are set by the operators. Call them directly to book. There is always a dive professional aboard if you want a guide.",
+      "Wrecks, artificial reefs, live bottom. Dive Pros doesn't own or operate these charters. Policies and prices are set by the operators. Call them directly to book. There's always a dive professional aboard if you want a guide.",
     operators: [
       {
         name: "Niuhi Dive Charters",
         contact: "Capt. Andy Ross · (850) 529-2475",
-        body: "30′ HydroCat, twin Suzuki 250s, six passengers. Quick, stable ride. Redundant electronics, VHF with DSC, EPIRB, freshwater shower, custom dive ladder, dry cabin, emergency oxygen and first aid. Water and snacks on every trip. Federal reef fishing permit covers spearfishing in federal and state waters, so you do not need your own fishing license.",
+        body: "30′ HydroCat, twin Suzuki 250s, six passengers. Quick, stable ride. Redundant electronics, VHF with DSC, EPIRB, freshwater shower, custom dive ladder, dry cabin, emergency oxygen and first aid. Water and snacks on every trip. Federal reef fishing permit covers spearfishing in federal and state waters, so you don't need your own fishing license.",
       },
       {
         name: "H2O Below Dive Charters",
@@ -102,11 +102,40 @@ export const divePages: EditorialPageData[] = [
     image: "/photos/sand-team.jpg",
     imageAlt: "Guided group over sand",
     intro:
-      "Visiting with a referral? Want a local in the water? We fit last-minute checkouts and guided dives around the shop’s real schedule. Call and we will tell you what is possible this week.",
+      "Visiting with a referral? Want a local in the water? We fit last-minute checkouts and guided dives around the shop's real schedule. Call and we'll tell you what's possible this week.",
     cta: { label: "Call the shop", href: "/contact" },
     related: [
       { label: "Charters", href: "/dive/charters" },
       { label: "Open Water", href: "/courses/open-water" },
+    ],
+  },
+  {
+    path: "/dive/spearfishing",
+    title: "Spearfishing",
+    kicker: "Experiences",
+    description:
+      "Spearfishing the northern Gulf from Dive Pros: snapper, grouper, amberjack, and more. Florida saltwater fishing permit required.",
+    image: "/photos/reef-ascent.jpg",
+    imageAlt: "Diver over a Gulf reef",
+    intro:
+      "The northern Gulf holds snapper, grouper, amberjack, flounder, triggerfish, wahoo, tuna, and cobia. Lobster and other shellfish too. This is a high-skill activity. New divers should not add hunting until gas management and buoyancy are solid. A specialty course is available and recommended.",
+    sections: [
+      {
+        heading: "Before you take a fish",
+        body: [
+          "State and federal waters are managed separately. Size and bag limits change. Check them before every trip. A Florida saltwater fishing permit is required. Niuhi's federal reef permit covers spearfishing on that boat so you don't need your own license on those trips.",
+        ],
+        list: [
+          "No spearfishing on Gulf Islands National Seashore, including Fort Pickens",
+          "No spearfishing on Navarre Beach Marine Sanctuary",
+          "Confirm current FWC saltwater regulations before you go",
+        ],
+      },
+    ],
+    cta: { label: "Ask about the specialty", href: "/courses/specialties" },
+    related: [
+      { label: "Charters", href: "/dive/charters" },
+      { label: "Links & regulations", href: "/about/links" },
     ],
   },
   {
@@ -118,7 +147,7 @@ export const divePages: EditorialPageData[] = [
     image: "/photos/surface.jpg",
     imageAlt: "Diver at the surface, split-level",
     intro:
-      "Sites you can reach without a boat. Depths generally 8′ to 50′. Park fees and beach tolls can apply. We will tell you before you go.",
+      "Sites you can reach without a boat. Depths generally 8′ to 50′. Park fees and beach tolls can apply. We'll tell you before you go.",
     stats: [
       { value: "8–50′", label: "Typical depth" },
       { value: "Beach", label: "Walk-in access" },
@@ -128,19 +157,19 @@ export const divePages: EditorialPageData[] = [
         name: "Fort Pickens Jetties",
         depth: "10–50′",
         location: "Gulf Islands National Seashore, Pensacola Beach",
-        body: "One of the most popular shore dives on the Panhandle. Access from the north seawall steps west of the fishing pier. Grouper, snapper, flounder, spadefish, guitarfish, sheepshead, red drum, stargazer, porcupine puffer, stingray. The rocks are a nursery for gobies, blennies, damselfish, jawfish.",
+        body: "One of the main SCUBA training sites on the Panhandle. Access from the north seawall steps west of the fishing pier. Grouper, snapper, flounder, spadefish, guitarfish, sheepshead, red drum, stargazer, porcupine puffer, stingray. The rocks are a nursery for gobies, blennies, damselfish, jawfish. Currents get strong on the tide change. Conditions are usually best from one hour before to one hour after peak high tide. Check Fort McRee Breakwater. A dive flag / float is required by law. Carry a knife or line cutter. Gloves help. Always with a buddy. Seasonal jellyfish. No spearfishing on Gulf Islands National Seashore.",
       },
       {
         name: "Park East Reef",
         depth: "9–15′",
         location: "5 miles east of Casino Beach · Parking Lot H",
-        body: "Built 2011. 19 pairs (38 modules) of Ecosystem by Reefmaker units from Gulf Shores: limestone-covered concrete discs on fiberglass pilings. Rows 20–25′ apart, about 500′ into the Gulf to the second sandbar. Module tops sit about 6–10′ below the surface.",
+        body: "Built 2011. 19 pairs (38 modules) of Ecosystem by Reefmaker units from Gulf Shores: limestone-covered concrete discs on fiberglass pilings. Rows 20–25′ apart, about 500′ into the Gulf to the second sandbar. Module tops sit about 6–10′ below the surface. About 5.2 miles east of Casino / 1.5 miles east of Portofino. Range markers are a yellow triangle and a blue square on the dune. Modules start about 300′ from shore in about 14′. Visibility usually 10–20′, up to 30′ on a calm day.",
       },
       {
         name: "Perdido Key Reef",
         depth: "9–15′",
         location: "Public Beach Access #1, Sandy Key Dr. off Johnson’s Beach Rd.",
-        body: "Built 2014. 24 Reefmaker modules, rows 20–25′ apart, about 280′ of reef. Tops about 6–8′ down. Tropical fish; sea turtles often rest in the sand around the modules.",
+        body: "Built 2014. 24 Reefmaker modules, rows 20–25′ apart, about 280′ of reef. Tops about 6–8′ down. Same yellow-triangle / blue-square marker system. Modules start about 300′ from shore in about 10′. Visibility usually 10–20′, up to 30′ when it's calm. Tropical fish; sea turtles often rest in the sand around the modules.",
       },
       {
         name: "Park West Reef",
@@ -149,23 +178,23 @@ export const divePages: EditorialPageData[] = [
         body: "Reef balls, memorial reefs, and other concrete. Corners marked by pylons 100′ apart in a square. Tops about 6–8′ down. Visibility usually 5–10′, occasionally 15–20′. Generally not a current site.",
       },
       {
-        name: "Casino Beach Reef",
+        name: "Charles Fennel Gonzalez, IV, Casino Beach Reef",
         depth: "10–15′",
         location: "Markers behind Crabs restaurant, Casino Beach parking lot",
-        body: "Newest Escambia shore site, completed 2020. About 1,500′ east of the Pensacola Fishing Pier. 17 limestone, concrete, and fiberglass modules up to six feet off the sand. About 700′ from shore.",
+        body: "Newest Escambia shore site, completed 2020. About 1,500′ east of the Pensacola Fishing Pier. 17 limestone, concrete, and fiberglass modules up to six feet off the sand, 650–700′ from shore. Blue square shoreward, yellow triangle seaward, behind Crabs. Line up the beach-ball water tower and the Verandas tower. Damselfish, schooling grunts, butterflyfish, sea turtles, octopuses. Pistol shrimp if you listen.",
       },
       {
         name: "Navarre Beach Marine Sanctuary",
         depth: "9–15′",
         location: "Navarre Beach · 2,000′ east of the fishing pier",
-        body: "Gulf site south of the Sea Oat pavilion (dive flag on the pavilion). Two posts on the dune mark it on shore. 340′ south of mean tide, 78 structures about 20′ apart, just beyond the second sandbar. Visibility 5–30′. Turtles and stingrays.",
+        body: "Gulf site south of the Sea Oat pavilion (dive flag on the pavilion). Two posts on the dune mark it on shore. 340′ south of mean tide, 78 structures about 20′ apart, just beyond the second sandbar. Visibility 5–40′. Surface markers sit on the reef. Turtles and stingrays. No spearfishing.",
       },
       {
         name: "Captain Bob Quarles Reef",
         depth: "13–15′",
         location: "~100 yards north of Park West Reef",
         coords: "30 19.738′N / 87 10.871′W",
-        body: "270 tons of Gulf Breeze Fishing Pier decking on concrete anchors. About 200–250 yards from shore. Navigate due north from the center of Park West about 150 yards. Fly a dive flag. Boat traffic is common. Visibility usually 5–10′.",
+        body: "270 tons of Gulf Breeze Fishing Pier decking on concrete anchors. About 200–250 yards from shore. Navigate due north from the center of Park West about 150 yards. Fly a dive flag. Boat traffic is common. Visibility usually 5–10′. If Park West is muddy, don't swim this one. Visibility rarely improves further out.",
       },
       {
         name: "Vortex Springs",
@@ -180,10 +209,27 @@ export const divePages: EditorialPageData[] = [
         body: "About 1.5 hours east, 6 miles south of I-10 exit 96. 250′ basin on a 161-acre Walton County park with boardwalks, pavilion, restrooms, and gear rinse. 48 million gallons a day, 66–68°. Large training platform. Cavern/cave for certified divers only. Check recent reports. Visibility tracks water level.",
       },
     ],
+    sections: [
+      {
+        heading: "Before you get in",
+        body: [
+          "These rules apply to every beach reef, not just Fort Pickens.",
+        ],
+        list: [
+          "Fly a Divers-Down flag and stay within 100′ of it",
+          "No lifeguards on the reef. Boat traffic is real",
+          "Waves and current can move you. Never dive alone",
+          "Snorkelers should wear a PFD",
+          "Read the beach flags: green, yellow, red, and purple for jellyfish / sea lice",
+          "Tide station for the pass: Fort McRee Breakwater",
+        ],
+      },
+    ],
     cta: { label: "Ask about conditions", href: "/contact" },
     related: [
       { label: "Nearshore", href: "/dive/nearshore" },
       { label: "All dive sites", href: "/dive/all-sites" },
+      { label: "Links & tides", href: "/about/links" },
     ],
   },
   {
@@ -407,7 +453,7 @@ export const divePages: EditorialPageData[] = [
     image: "/photos/wreck-hatch.jpg",
     imageAlt: "Divers silhouetted in a wreck opening, blue water beyond",
     intro:
-      "On May 17, 2006 the 911′ Essex-class carrier was sunk about 26.5 miles southeast of Pensacola Pass. She sits in 212′ of water; the top of the island is around 84′. Nicknamed the Mighty O: a world-class wreck, and not a beginner dive. Be honest with yourself and with the crew. Currents can be serious. It is not worth hurting yourself to see her.",
+      "On May 17, 2006 the 911′ Essex-class carrier was sunk about 26.5 miles southeast of Pensacola Pass. She sits in 212′ of water. The top of the island is around 84′. She's about 150′ tall and 146′ wide. Nickname: the Mighty O. This is not a beginner dive. Be honest with yourself and with the crew. Currents can be serious. It isn't worth hurting yourself to see her.",
     stats: [
       { value: "911′", label: "Essex-class carrier" },
       { value: "84′", label: "Top of the island" },
@@ -463,11 +509,15 @@ export const divePages: EditorialPageData[] = [
         index: "01",
         title: "The wreck",
         body: "Commissioned September 25, 1950; recommissioned March 7, 1959; decommissioned September 30, 1975. Two battle stars in Korea, five in Vietnam. Dedicated as a memorial reef for the thousands who served her 25 years. Habitat from blennies and angelfish to snapper, grouper, and massive amberjack. Whale sharks and manta rays have been seen on the tower.",
+        image: "/photos/oriskany/03-aerial.jpg",
+        imageAlt: "Aerial of USS Oriskany on the day she was sunk as a reef",
       },
       {
         index: "02",
         title: "Depths",
         body: "Approximate, and they move. A section of the island collapsed after Tropical Storm Ida in 2009, opening a roughly 50′ swim-through in the tower. Do not enter the interior.",
+        image: "/photos/oriskany/07-descent.jpg",
+        imageAlt: "USS Oriskany going under, the drop that left her in 212 feet",
         list: [
           "Top of Oriskany: 84′ (26 m)",
           "Primary flight bridge: 105′ (32 m)",
@@ -481,7 +531,9 @@ export const divePages: EditorialPageData[] = [
       {
         index: "03",
         title: "Who goes",
-        body: "Without a divemaster guide: Advanced or Deep specialty, 20+ dives, two logged dives below 80′ in the past year. With a guide: Open Water or above, 20 logged dives, two dives in the past year or a refresher. Carry a visual and audible signaling device (SMB and whistle). Computers strongly recommended; some operators require them. Complete, well-maintained kit.",
+        body: "Without a divemaster guide: Advanced or Deep specialty, 20+ dives, two logged dives below 80′ in the past year. With a guide: Open Water or above, 20 logged dives, two dives in the past year or a refresher. Carry a visual and audible signaling device (SMB and whistle). Most charters provide those at no extra cost. Computers strongly recommended; some operators require them. Complete, well-maintained kit.",
+        image: "/photos/wreck-team.jpg",
+        imageAlt: "Experienced team on a wreck with a dive light",
       },
     ],
     cta: { label: "Charter introductions", href: "/dive/charters" },
@@ -490,7 +542,7 @@ export const divePages: EditorialPageData[] = [
       { label: "Advanced Open Water", href: "/courses/advanced-open-water" },
     ],
     footnote:
-      "Dive Pros does not own or operate charter boats. Policies and prices are set by the operators. A divemaster is aboard to serve as a guide if wanted or required.",
+      "GPS: 30 02.555′N / 87 00.397′W. Dive Pros does not own or operate charter boats. Policies and prices are set by the operators. A divemaster is aboard to serve as a guide if wanted or required. Operators here do not mix recreational divers with technical divers on the same trip.",
   },
   {
     path: "/dive/all-sites",

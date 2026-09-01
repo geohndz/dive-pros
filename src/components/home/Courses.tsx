@@ -19,26 +19,22 @@ export function Courses() {
           <Reveal className="lg:col-span-5">
             <div className="relative aspect-[4/5] overflow-hidden bg-brand-black">
               <Image
-                src="/photos/facility-pool.jpg"
-                alt="Indoor heated training tank at Dive Pros"
+                src="/photos/aqua-pair.jpg"
+                alt="Buddy pair in clear water during a training dive"
                 fill
                 className="object-cover"
-                style={{ objectPosition: objectPosition("/photos/facility-pool.jpg") }}
+                style={{ objectPosition: objectPosition("/photos/aqua-pair.jpg") }}
                 sizes="(max-width: 1024px) 100vw, 40vw"
               />
             </div>
             <div className="mt-8">
-              <h2 className="display display-sm">
-                Become a diver.
-                <br />
-                Stay one.
-              </h2>
+              <h2 className="display display-sm">Open Water</h2>
               <p className="mt-6 max-w-md text-base leading-relaxed text-brand-black/70">
-                On-site 12′ indoor heated tank. Two classrooms. New Open Water
-                classes every week. $389, or $359 for active duty and veterans.
+                12′ indoor heated tank on site. Two classrooms. New classes
+                every week. $389, or $359 for active duty and veterans.
               </p>
               <div className="mt-8">
-                <Button href="/courses/open-water">Open Water Course</Button>
+                <Button href="/courses/open-water">View Open Water</Button>
               </div>
             </div>
           </Reveal>

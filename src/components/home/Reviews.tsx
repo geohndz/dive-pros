@@ -57,7 +57,7 @@ export function Reviews() {
                 “{review.quote}”
               </p>
               <footer className="mt-10 flex flex-col gap-1">
-                <cite className="text-base font-bold not-italic uppercase tracking-wide text-brand-yellow">
+                <cite className="text-base font-bold not-italic tracking-tight text-brand-yellow">
                   {review.name}
                 </cite>
                 <span className="text-xs font-medium uppercase tracking-[0.18em] text-brand-white/45">

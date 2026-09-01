@@ -35,11 +35,11 @@ export default function ContactPage() {
         <div className="lg:col-span-5">
           <SectionIndex index="-" label="Contact" />
           <h1 className="display display-sm mt-8 text-brand-white">
-            The shop is the front door.
+            Walk in
           </h1>
           <p className="mt-8 max-w-md text-lg leading-relaxed text-brand-white/75">
-            Walk in, call, or write. We would rather talk you into the right
-            class than sell you the wrong gear.
+            Call, write, or come to the counter. We&apos;d rather talk you into
+            the right class than sell you the wrong gear.
           </p>
         </div>
 
@@ -90,7 +90,7 @@ export default function ContactPage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Directions
+                Get directions
               </Button>
             </div>
           </address>

@@ -21,8 +21,8 @@ export function Footer() {
               />
             </Link>
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-brand-white/60">
-              Pensacola&apos;s premier dive shop since 1988. Training, gear,
-              service, and the Gulf, under one roof.
+              PADI training, SCUBAPRO and Aqua Lung on the floor, and a service
+              bench that treats gear as life support.
             </p>
           </div>
 
@@ -36,7 +36,7 @@ export function Footer() {
                   <li key={item.id}>
                     <Link
                       href={item.href}
-                      className="text-sm font-medium uppercase tracking-wide text-brand-white hover:text-brand-yellow"
+                      className="text-sm font-medium tracking-tight text-brand-white hover:text-brand-yellow"
                     >
                       {item.label}
                     </Link>
@@ -44,8 +44,16 @@ export function Footer() {
                 ))}
                 <li>
                   <Link
+                    href="/about/links"
+                    className="text-sm font-medium tracking-tight text-brand-white hover:text-brand-yellow"
+                  >
+                    Links
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="/contact"
-                    className="text-sm font-medium uppercase tracking-wide text-brand-white hover:text-brand-yellow"
+                    className="text-sm font-medium tracking-tight text-brand-white hover:text-brand-yellow"
                   >
                     Contact
                   </Link>
@@ -57,7 +65,7 @@ export function Footer() {
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-white/40">
                 Hours
               </p>
-              <p className="mt-4 text-sm font-medium uppercase tracking-wide">
+              <p className="mt-4 text-sm font-medium tracking-tight">
                 {hours.summer.label}
               </p>
               <p className="text-xs text-brand-white/50">{hours.summer.range}</p>
@@ -68,7 +76,7 @@ export function Footer() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-sm font-medium uppercase tracking-wide">
+              <p className="mt-4 text-sm font-medium tracking-tight">
                 {hours.winter.label}
               </p>
               <p className="text-xs text-brand-white/50">{hours.winter.range}</p>
@@ -120,7 +128,7 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs uppercase tracking-[0.16em] text-brand-white/40 sm:flex-row sm:justify-between">
           <span>© {new Date().getFullYear()} Dive Pros · Pensacola, FL</span>
-          <span>Since 1988</span>
+          <span>7203 W. Hwy. 98</span>
         </div>
       </Container>
     </footer>

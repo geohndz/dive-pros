@@ -5,7 +5,7 @@ import { objectPosition } from "@/lib/image-focus";
 import { pageMetadata, staticPageJsonLd } from "@/lib/seo";
 
 const galleryDescription =
-  "Dive Pros gallery: Gulf Coast scuba diving, Pensacola wrecks and reefs, USS Oriskany, and the water we train in.";
+  "Dive Pros gallery: Gulf Coast SCUBA diving, Pensacola wrecks and reefs, USS Oriskany, and the water we train in.";
 
 export const metadata = pageMetadata({
   path: "/gallery",
@@ -52,8 +52,8 @@ const frames = [
   { src: "/photos/shaka.jpg", alt: "Diver making a shaka sign in blue water" },
   { src: "/photos/wreck-hatch.jpg", alt: "Two divers silhouetted in a wreck hatch", className: "lg:col-span-2" },
   {
-    src: "/photos/facility-pool.jpg",
-    alt: "Indoor heated training tank at Dive Pros",
+    src: "/photos/oriskany/07-descent.jpg",
+    alt: "USS Oriskany going down by the stern",
     className: "lg:col-span-2",
   },
   { src: "/photos/shop-floor.jpg", alt: "Retail floor at Dive Pros in Pensacola" },
@@ -87,15 +87,15 @@ export default function GalleryPage() {
         <Container className="relative flex min-h-[70vh] flex-col justify-end pb-12 pt-[calc(var(--header-height)+2rem)] lg:min-h-[82vh] lg:pb-16">
           <SectionIndex index="-" label="Gallery" />
           <h1 className="display mt-6 max-w-4xl text-brand-white">
-            The water we work in.
+            The water we work in
           </h1>
         </Container>
       </header>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-        {frames.map((frame) => (
+        {frames.map((frame, i) => (
           <div
-            key={frame.src}
+            key={`${frame.src}-${i}`}
             className={`relative min-h-[280px] overflow-hidden bg-brand-black sm:min-h-[340px] ${frame.className ?? ""}`}
           >
             <Image

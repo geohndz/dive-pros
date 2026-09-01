@@ -1,0 +1,438 @@
+﻿Dive Pros — Website Grammar & Design Rules
+01 — Write like a diver, not a marketing department
+Avoid:
+Our award-winning training program provides an exceptional educational experience for divers of all levels.
+Prefer:
+Learn to dive in our 54,000-gallon heated indoor pool, then take your skills into the Gulf.
+Rule:
+Specific > impressive.
+If a sentence could describe a gym, hotel, agency, or SaaS company, rewrite it.
+________________
+
+
+02 — Kill generic superlatives
+Be careful with:
+* premier
+* world-class
+* best
+* finest
+* exceptional
+* amazing
+* unparalleled
+* unmatched
+* trusted
+* award-winning
+* professional
+* state-of-the-art
+* comprehensive
+* premier destination
+The original site uses several of these heavily, including “#1,” “finest,” “award winning,” and “world-class.” (Florida Dive Pros)
+Instead, prove the claim.
+❌ World-class facilities
+✅ 54,000-gallon heated indoor training pool
+❌ The best equipment around
+✅ Authorized SCUBAPRO and Aqua Lung/Apeks dealer
+❌ Professional service
+✅ Factory-trained technicians servicing most major SCUBA equipment brands
+That's way more persuasive anyway. (Florida Dive Pros)
+________________
+
+
+03 — One idea per sentence
+The old site frequently stacks multiple ideas together.
+For example, the homepage essentially says:
+training + retail + snorkeling + equipment + niches + one-stop shop
+all in one paragraph. (Florida Dive Pros)
+Instead:
+Learn to dive.
+Get your gear.
+Service your equipment.
+Explore Pensacola.
+Then explain each one.
+Rule:
+One sentence = one idea.
+________________
+
+
+04 — Prefer concrete nouns over adjectives
+This is a really good anti-AI writing rule.
+❌ “Our amazing instructors provide exceptional training.”
+✅ “Our instructors teach in a 54,000-gallon heated indoor pool.”
+❌ “We offer an incredible selection of equipment.”
+✅ “Shop SCUBAPRO, Aqua Lung, Apeks, Shearwater, SeaLife, and more.”
+The second versions show expertise instead of announcing it.
+________________
+
+
+05 — Use numbers aggressively
+Dive Pros has an enormous advantage:
+You have numbers.
+Use them.
+* Since 1988
+* 54,000 gallons
+* 12 feet deep
+* 2 classrooms
+* 2,000+ sq. ft. showroom
+* 911 ft. USS Oriskany
+* 20+ miles offshore
+* $X certification
+* X dives
+* X days
+The original site already contains tons of these facts, but they're buried inside paragraphs. (Florida Dive Pros)
+Rule:
+If there's a meaningful number, don't hide it in a paragraph.
+Make it a visual element.
+________________
+
+
+06 — Don't say “Since 1988” five times
+This is important for the redesign.
+“Since 1988” is a brand asset, not filler copy.
+Use it prominently once.
+Then let the rest of the site demonstrate the history through:
+* staff
+* photos
+* testimonials
+* facilities
+* certifications
+* local knowledge
+* dive sites
+Rule:
+A fact becomes weaker when you repeat it.
+________________
+
+
+07 — Don't make every headline a sentence
+This is one of the things that can make the site feel AI-generated.
+You don't need:
+Discover the Gulf Coast's Best Diving Experiences
+Explore Everything We Have to Offer
+Everything You Need to Become a Better Diver
+Instead, sometimes just say:
+Training
+The Oriskany
+Service
+Local diving
+Our shop
+Short nouns feel confident.
+________________
+
+
+08 — Don't force the “X. X. X.” copy pattern
+This is one I'd specifically add to your design rules.
+Avoid overusing:
+Train. Dive. Repeat.
+Learn. Explore. Discover.
+Gear. Service. Adventure.
+It's trendy and can quickly become AI-ish.
+Use it sparingly.
+One memorable line = great.
+Five of them = marketing template.
+________________
+
+
+09 — Stop making everything “premium”
+Dive Pros isn't a luxury brand.
+It's something arguably more interesting:
+a deeply experienced local dive shop.
+The brand should feel:
+* knowledgeable
+* adventurous
+* welcoming
+* technical
+* local
+* established
+* slightly gritty
+Not:
+* luxury
+* minimalist
+* corporate
+* startup
+* “premium experience”
+That distinction is important.
+________________
+
+
+10 — Let technical information stay technical
+This is HUGE.
+Don't dumb everything down in an attempt to make the website “clean.”
+Dive Pros has genuinely nerdy expertise.
+For example, the technical diving content includes things like:
+* gas planning
+* decompression
+* trim
+* buoyancy
+* gas switching
+* emergency procedures
+* helium/nitrox
+* rebreathers
+That's credibility. (Florida Dive Pros)
+Rule:
+Simplify the presentation, not the expertise.
+You can make technical information visually digestible without turning it into generic marketing fluff.
+________________
+
+
+11 — Testimonials should sound like humans
+Don't “correct” customer reviews too much.
+If someone says:
+“These guys are the greatest.”
+leave it.
+If someone says:
+“yalls help”
+leave it if it's a direct quote.
+The imperfections are actually valuable.
+The original site has years of reviews with very different voices. That's social proof and personality. (Florida Dive Pros)
+Rule:
+Don't AI-polish human voices.
+________________
+
+
+12 — But edit everything else ruthlessly
+There are two categories:
+Customer voice
+→ preserve it.
+Dive Pros voice
+→ edit it.
+That distinction should be sacred.
+________________
+
+
+13 — Use contractions
+Unless you're writing something technical/legal:
+We are → We're
+You are → You're
+We have → We've
+It is → It's
+Do not → Don't
+This makes the brand feel much more like a person talking.
+________________
+
+
+14 — Don't capitalize SCUBA randomly
+Pick a style and stick to it.
+I'd recommend:
+SCUBA
+rather than:
+Scuba
+scuba
+SCUBA
+The original site jumps between SCUBA, Scuba and SCUBA/Snorkeling. (Florida Dive Pros)
+Same goes for:
+* Dive Pros
+* dive shop
+* Gulf Coast
+* Pensacola
+* Open Water
+* Advanced Open Water
+Create a tiny style dictionary and enforce it everywhere.
+________________
+
+
+15 — Don't use apostrophes for Dive Pros
+This is actually important because the old reviews contain:
+“Dive Pro’s”
+That's incorrect when referring to the plural business name.
+Correct:
+Dive Pros
+Not:
+Dive Pro's
+But because it's inside a customer quote, don't alter it.
+________________
+
+
+16 — Write headlines in sentence case. Set them in all caps.
+Copy is authored in sentence case:
+Local dive sites
+Open Water
+The shop
+The stylesheet sets those headlines in all caps:
+LOCAL DIVE SITES
+Don’t write the source as LOCAL DIVE SITES & EXPERIENCES.
+Don’t switch display headlines to sentence-case styling to feel “less corporate.”
+Body copy, quotes, names, and data tables stay sentence case.
+________________
+
+
+17 — Every section needs a job
+Before adding a section ask:
+What does this section help the visitor do?
+Possible answers:
+* Learn
+* Compare
+* Decide
+* Book
+* Contact
+* Navigate
+* Trust
+* Explore
+If the answer is:
+“It makes the page look better.”
+🚨 reconsider it.
+________________
+
+
+18 — Don't use decoration to fill empty space
+This is probably the biggest visual rule I'd give you.
+Don't add:
+* random blobs
+* stars
+* gradients
+* circles
+* floating shapes
+* random lines
+unless they have a reason to exist.
+Instead, use Dive Pros' actual world:
+* dive tables
+* depth measurements
+* coordinates
+* nautical charts
+* tank markings
+* equipment diagrams
+* certification cards
+* boat details
+* wreck schematics
+* underwater photography
+* maps
+* timestamps
+* dive logs
+That's your visual language.
+And it's much harder for AI to fake convincingly.
+________________
+
+
+19 — Break the grid intentionally
+Don't let every section become:
+[text] [image]
+[image] [text]
+[text] [image]
+[image] [text]
+After a few sections, break it.
+Maybe:
+FULL-WIDTH ORISKANY IMAGE
+911 FT
+USS ORISKANY
+Then a tiny technical specification row.
+Then an asymmetrical image gallery.
+Then text.
+That's authored design.
+________________
+
+
+20 — Give important things different visual treatment
+Not everything deserves to be a card.
+Use:
+Cards
+For:
+* courses
+* services
+* products
+* categories
+Full-bleed
+For:
+* Oriskany
+* underwater photography
+* major brand moments
+Tables
+For:
+* pricing
+* dive sites
+* specifications
+Big numbers
+For:
+* depths
+* distances
+* years
+* tank capacity
+Lists
+For:
+* equipment
+* course requirements
+* services
+Maps
+For:
+* dive locations
+This creates visual hierarchy naturally.
+________________
+
+
+21 — Don't make every CTA “Learn More”
+This is a BIG one.
+Instead of:
+Learn More →
+Use:
+View courses →
+See dive sites →
+Explore the Oriskany →
+View service pricing →
+Meet the instructors →
+Get directions →
+Rule:
+A CTA should tell me exactly what happens next.
+________________
+
+
+22 — Use “you” more than “we”
+Old websites tend to say:
+We offer...
+We provide...
+We have...
+Try:
+You can train in our indoor pool.
+Bring your gear in for service.
+Explore wrecks off Pensacola.
+The visitor should feel like the protagonist.
+________________
+
+
+23 — But don't eliminate “we”
+You still need personality.
+Compare:
+Dive Pros provides SCUBA instruction.
+vs.
+We've been teaching people to dive in Pensacola since 1988.
+The second feels like a real business.
+________________
+
+
+24 — Give every page one sentence that only Dive Pros could say
+This is my favorite rule.
+Ask:
+Could another dive shop copy this sentence?
+If yes → make it more specific.
+For example:
+“Explore beautiful underwater environments.”
+❌ Any dive shop.
+“From the 911-foot Oriskany to shallow shore dives, Pensacola gives you wrecks, reefs, and plenty of reasons to get in the water.”
+✅ Much harder to copy.
+The local dive-site database is one of the site's strongest sources of this kind of specificity. (Florida Dive Pros)
+________________
+
+
+25 — Don't be afraid of “ugly” information
+This is particularly important for your redesign.
+A website doesn't have to hide:
+* prices
+* phone numbers
+* hours
+* addresses
+* requirements
+* restrictions
+* equipment lists
+* technical specs
+The original site has valuable information like service pricing and course requirements. (Florida Dive Pros)
+Make that information beautiful instead of deleting it.
+________________
+
+
+The ultimate rule
+I'd put this at the top of your Figma file:
+If it sounds impressive but doesn't tell me anything, rewrite it.
+If it tells me something specific, make it bigger.
+That single rule will eliminate a huge amount of the AI-generated feeling.
+And there's an even more important one for the visual design:
+Don't design a generic “dive shop.” Design Dive Pros.
+The original site gives you an insane amount of raw material to do that: Pensacola, the Gulf Coast, the Oriskany, 1988, the training pool, local wrecks, technical diving, instructors, equipment service, maps, and decades of customer relationships. (Florida Dive Pros)
+That's the stuff I'd lean into rather than trying to make the redesign look “modern.”
+Modern is a visual style.
+Specific is a brand.

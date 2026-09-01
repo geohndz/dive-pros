@@ -15,7 +15,7 @@ export function Hero() {
         <ImageDroplets
           className="h-full min-h-screen w-full"
           src="/hero.jpg"
-          alt="Scuba divers underwater with sunlight streaming from the surface"
+          alt="Divers underwater with sunlight streaming from the surface"
           intensity={0.85}
           speed={1}
           scale={0.35}
@@ -31,22 +31,20 @@ export function Hero() {
       <div className="relative z-10 mx-auto flex min-h-screen max-w-[1440px] items-end px-5 pb-16 pt-[calc(var(--header-height)+1.5rem)] lg:px-10 lg:pb-24">
         {/* Row height is driven by the text block; awards scale to that height */}
         <div className="flex w-full flex-col gap-10 lg:flex-row lg:items-stretch lg:justify-between lg:gap-16">
-          <div className="max-w-fit">
-            <h1 className="animate-hero-fade-up text-4xl font-bold uppercase leading-[1.05] tracking-wide text-brand-white sm:text-5xl lg:text-6xl xl:text-[4.25rem]">
-              Pensacola&apos;s dive
-              <br />
-              <span className="sm:whitespace-nowrap">
-                Community{" "}
-                <span className="text-brand-yellow">Since&nbsp;1988</span>
+          <div className="@container min-w-0 w-full flex-1">
+            <h1 className="animate-hero-fade-up text-[clamp(1.1rem,4.9cqi,4.25rem)] font-bold uppercase leading-[1.05] tracking-wide text-brand-white">
+              <span className="whitespace-nowrap">
+                Pensacola&apos;s dive community
               </span>
+              <br />
+              <span className="text-brand-yellow">since 1988</span>
             </h1>
             <p className="animate-hero-fade-up animate-hero-delay-1 mt-5 max-w-xl text-base leading-relaxed text-brand-white sm:text-lg">
-              For over three decades, we&apos;ve helped divers explore the Gulf
-              Coast through world-class training, trusted gear, and a community
-              that feels like family.
+              Learn to dive in our 54,000-gallon heated indoor pool. Then take
+              your skills into the Gulf.
             </p>
             <div className="animate-hero-fade-up animate-hero-delay-2 mt-8">
-              <Button href="/courses">Explore our courses</Button>
+              <Button href="/courses">View courses</Button>
             </div>
           </div>
 

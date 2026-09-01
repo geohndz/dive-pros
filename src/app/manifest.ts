@@ -5,11 +5,11 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Dive Pros",
     short_name: "Dive Pros",
     description:
-      "PADI scuba shop in Pensacola, FL. Training, gear, service, and the Gulf since 1988.",
+      "PADI SCUBA shop in Pensacola, FL. Training, gear, service, and the Gulf.",
     start_url: "/",
     display: "browser",
-    background_color: "#111111",
-    theme_color: "#111111",
+    background_color: "#122440",
+    theme_color: "#122440",
     lang: "en-US",
     icons: [
       {

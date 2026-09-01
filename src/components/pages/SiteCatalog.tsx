@@ -180,7 +180,7 @@ export function SiteCatalog({ tables }: { tables: CatalogTable[] }) {
                         key={`${row.name}-${row.coords}`}
                         className="border-b border-white/10"
                       >
-                        <td className="break-words py-4 pr-4 text-sm font-medium uppercase tracking-wide text-brand-white">
+                        <td className="break-words py-4 pr-4 text-sm font-medium tracking-tight text-brand-white">
                           {row.name}
                         </td>
                         <td className="break-words py-4 pr-4 text-sm text-brand-white/60">

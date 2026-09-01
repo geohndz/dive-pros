@@ -5,7 +5,22 @@ Living reference for brand tokens and UI patterns. Update this document as each 
 ## Brand
 
 - **Name:** Dive Pros — Pensacola, FL
-- **Tone:** Local dive community, experienced, welcoming, Gulf Coast. Editorial and sharp — not beach-kitche.
+- **Tone:** Knowledgeable, adventurous, welcoming, technical, local, established, slightly gritty. Not luxury, corporate, or “premium.”
+- **Voice:** Write like a diver. Specific beats impressive. One idea per sentence. Use “you” more than “we.” Contractions unless technical or legal.
+- **Numbers:** If a number is meaningful, make it visual. Don’t bury it in a paragraph.
+- **Since 1988:** Brand asset, used once (hero). Don’t repeat it as filler.
+
+### Style dictionary
+
+| Term | Use |
+|------|-----|
+| SCUBA | Always, except in customer quotes and official PADI names (Discover Scuba, Master Scuba Diver) |
+| Dive Pros | Never “Dive Pro’s” in our voice. Leave it inside quotes. |
+| Gulf Coast | Capital C |
+| Pensacola | As written |
+| Open Water / Advanced Open Water | Course names, title case |
+| Headlines | Write sentence case; render in all caps via CSS |
+
 - **Icons:** [Lucide](https://lucide.dev)
 - **Corners:** **0px everywhere.** No rounded buttons, cards, images, menus, or tags.
 
@@ -13,7 +28,7 @@ Living reference for brand tokens and UI patterns. Update this document as each 
 
 | Token | CSS variable | Hex | Usage |
 |-------|--------------|-----|--------|
-| Black | `--color-brand-black` | `#111111` | Page ground, header (on scroll), primary text on light, inverse buttons |
+| Navy | `--color-brand-black` | `#122440` → `#02060F` | Page ground. Surface at the top of the page; darkens toward the abyss as you scroll |
 | White | `--color-brand-white` | `#FFFFFF` | Type on dark, courses panel, mega nav |
 | Yellow | `--color-brand-yellow` | `#FFFA3B` | Primary CTAs, accent words, indexes, marquee, visit band |
 | Gray | `--color-brand-gray` | `#5E5E5E` | Mega column headers, secondary labels on light |
@@ -30,7 +45,7 @@ Hairlines: `white/10` on dark, `black/10` or `black/15` on light/yellow.
 
 | Role | Size | Weight | Transform / color |
 |------|------|--------|-------------------|
-| Display (`.display`) | clamp ~2.6rem–6.25rem | Bold (700) | Uppercase; line-height 0.92 |
+| Display (`.display`) | clamp ~2.4rem–5.25rem | Bold (700) | Uppercase; line-height 0.92 |
 | Hero headline | clamp ~2.5rem–4.25rem | Bold (700) | Uppercase; white + yellow accent |
 | Section body | ~1rem–1.125rem | Regular (400) | Sentence case |
 | Index / kicker | 0.7rem | Medium (500) | Uppercase; tracking 0.22em; yellow |
@@ -92,6 +107,7 @@ Hairlines: `white/10` on dark, `black/10` or `black/15` on light/yellow.
 | Scroll reveal | Sections | GSAP + ScrollTrigger; skipped if reduced motion |
 | Marquee | Below hero | CSS; paused if reduced motion |
 | Review rotate | Reviews | 8s interval; paused if reduced motion |
+| Water depth | Page ground | Navy darkens from `#122440` to `#02060F` on scroll; skipped if reduced motion |
 
 ## Spacing
 

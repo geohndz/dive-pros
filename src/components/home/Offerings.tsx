@@ -38,11 +38,9 @@ export function Offerings() {
       <Container className="py-20 lg:py-28">
         <SectionIndex index="02" label="What we do" />
         <div className="mt-10 flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
-          <h2 className="display max-w-3xl text-brand-white">
-            Training. Service. Water. Repeat.
-          </h2>
+          <h2 className="display max-w-3xl text-brand-white">The shop</h2>
           <p className="max-w-sm text-sm leading-relaxed text-brand-white/65 lg:mb-2">
-            Four rooms under one roof: academy, bench, boats, and the Gulf.
+            From Open Water to the Oriskany, it starts at 7203 W. Hwy. 98.
           </p>
         </div>
       </Container>
