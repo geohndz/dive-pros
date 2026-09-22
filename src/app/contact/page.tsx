@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
-import { Container, SectionIndex } from "@/components/ui/Container";
+import { Container } from "@/components/ui/Container";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { hours, site } from "@/lib/site";
 import { objectPosition } from "@/lib/image-focus";
@@ -33,8 +33,7 @@ export default function ContactPage() {
       />
       <Container className="grid items-end gap-10 py-16 lg:grid-cols-12 lg:gap-16 lg:py-24">
         <div className="lg:col-span-5">
-          <SectionIndex index="-" label="Contact" />
-          <h1 className="display display-sm mt-8 text-brand-white">
+          <h1 className="display display-sm text-brand-white">
             Walk in
           </h1>
           <p className="mt-8 max-w-md text-lg leading-relaxed text-brand-white/75">

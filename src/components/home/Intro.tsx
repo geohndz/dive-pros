@@ -1,34 +1,19 @@
-import { Container, SectionIndex } from "@/components/ui/Container";
-import { Reveal } from "@/components/motion/Reveal";
+import { Container } from "@/components/ui/Container";
 import { stats } from "@/lib/site";
 
 export function Intro() {
   return (
     <section className="border-b border-white/10 bg-brand-black">
       <Container className="py-20 lg:py-28">
-        <Reveal>
-          <SectionIndex index="01" label="About" />
-        </Reveal>
-
-        <div className="mt-10">
-          <Reveal>
-            <h2 className="display text-brand-white">
-              <span className="lg:whitespace-nowrap">Not just certified.</span>
-              <br />
-              <span className="text-brand-yellow">Qualified.</span>
-            </h2>
-          </Reveal>
-          <Reveal delay={0.1} className="mt-8 max-w-xl">
-            <p className="text-base leading-relaxed text-brand-white/80 sm:text-lg">
-              You train in a 54,000-gallon indoor pool, 12 feet deep and heated.
-              Two classrooms sit a few steps from the water. The Gulf is the
-              rest of the course.
-            </p>
-            <p className="mt-6 text-sm font-medium uppercase tracking-[0.18em] text-brand-white/45">
-              Pensacola, Florida
-            </p>
-          </Reveal>
-        </div>
+        <p className="text-[0.7rem] font-medium uppercase tracking-[0.22em] text-brand-yellow">
+          12′
+        </p>
+        <h2 className="display mt-4 text-brand-white">The tank</h2>
+        <p className="mt-8 max-w-xl text-base leading-relaxed text-brand-white/80 sm:text-lg">
+          You train in a 54,000-gallon indoor pool, 12 feet deep and heated.
+          Two classrooms sit a few steps from the water. The Gulf is the rest
+          of the course.
+        </p>
       </Container>
 
       <div className="border-t border-white/10">
@@ -43,14 +28,12 @@ export function Intro() {
                   index % 2 === 1 ? "border-l border-white/10 pl-6 sm:pl-8" : ""
                 }`}
               >
-                <Reveal delay={index * 0.05}>
-                  <p className="text-4xl font-bold uppercase tracking-wide text-brand-yellow sm:text-5xl lg:text-6xl">
-                    {stat.value}
-                  </p>
-                  <p className="mt-3 text-xs font-medium uppercase tracking-[0.18em] text-brand-white/50">
-                    {stat.label}
-                  </p>
-                </Reveal>
+                <p className="text-4xl font-bold uppercase tracking-wide text-brand-yellow sm:text-5xl lg:text-6xl">
+                  {stat.value}
+                </p>
+                <p className="mt-3 text-xs font-medium uppercase tracking-[0.18em] text-brand-white/50">
+                  {stat.label}
+                </p>
               </li>
             ))}
           </ul>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { Container, SectionIndex } from "@/components/ui/Container";
+import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/motion/Reveal";
 import { SiteCatalog } from "@/components/pages/SiteCatalog";
 import { LocationMap } from "@/components/pages/LocationMap";
@@ -48,8 +48,7 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/50 to-brand-black/25" />
         <Container className="relative flex min-h-[70vh] flex-col justify-end pb-12 pt-[calc(var(--header-height)+2rem)] lg:min-h-[82vh] lg:pb-16">
-          <SectionIndex index="-" label={page.kicker} />
-          <h1 className="display mt-6 max-w-5xl text-brand-white">{page.title}</h1>
+          <h1 className="display max-w-5xl text-brand-white">{page.title}</h1>
           {page.cta ? (
             <div className="mt-8">
               <Button href={page.cta.href}>{page.cta.label}</Button>
@@ -60,7 +59,7 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
 
       <div className="border-t border-white/10">
         <Container className="py-12 lg:py-16">
-          <p className="max-w-3xl text-lg leading-relaxed text-brand-white/75 lg:text-xl">
+          <p className="log text-brand-white/85 lg:text-[1.35rem]">
             {page.intro}
           </p>
         </Container>
@@ -72,7 +71,7 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
             {page.stats.map((stat) => (
               <div key={`${stat.value}-${stat.label}`}>
                 <p className="display-stat text-brand-yellow">{stat.value}</p>
-                <p className="mt-3 text-xs font-medium uppercase tracking-[0.2em] text-brand-white/45">
+                <p className="mt-3 font-sans text-xs font-medium uppercase tracking-[0.2em] text-brand-white/45">
                   {stat.label}
                 </p>
               </div>
@@ -91,19 +90,11 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
       {page.paths?.length ? (
         <section className="border-t border-brand-black/10 bg-brand-white text-brand-black">
           <Container className="py-16 lg:py-24">
-            <Reveal>
-              <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-gray">
-                Paths
-              </p>
-            </Reveal>
-            <ul className="mt-8">
+            <ul>
               {page.paths.map((item) => (
                 <li key={item.href} className="border-b border-brand-black/10">
                   <SwooshRow href={item.href} className="py-5">
                     <span className="flex min-w-0 items-baseline gap-5">
-                      <span className="w-8 shrink-0 text-xs font-medium uppercase tracking-[0.18em] text-brand-gray transition-colors duration-500 group-hover:text-brand-black">
-                        {item.index}
-                      </span>
                       <span className="text-lg font-bold uppercase tracking-wide sm:text-2xl">
                         {item.title}
                       </span>
@@ -125,13 +116,8 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
       {page.modules?.length ? (
         <section className="border-t border-white/10">
           <Container className="py-16 lg:py-24">
-            <Reveal>
-              <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-white/40">
-                Modules
-              </p>
-            </Reveal>
             <ol
-              className={`mt-10 grid border-t border-white/10 ${
+              className={`grid ${
                 page.modules.length === 2 ? "lg:grid-cols-2" : "lg:grid-cols-3"
               }`}
             >
@@ -243,12 +229,7 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
       {page.sites?.length ? (
         <section className="border-t border-white/10">
           <Container className="py-16 lg:py-24">
-            <Reveal>
-              <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-white/40">
-                Sites
-              </p>
-            </Reveal>
-            <ul className="mt-10 grid gap-0 sm:grid-cols-2">
+            <ul className="grid gap-0 sm:grid-cols-2">
               {page.sites.map((site) => (
                 <li
                   key={site.name}
@@ -311,10 +292,12 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
       {page.catalog?.items.length ? (
         <section className="border-t border-white/10">
           <Container className="py-16 lg:py-24">
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-white/40">
-              {page.catalog.heading ?? "Courses"}
-            </p>
-            <ul className="mt-10">
+            {page.catalog.heading ? (
+              <h2 className="text-xl font-bold uppercase tracking-wide text-brand-white sm:text-2xl">
+                {page.catalog.heading}
+              </h2>
+            ) : null}
+            <ul className={page.catalog.heading ? "mt-10" : undefined}>
               {page.catalog.items.map((item) => (
                 <li
                   key={item.title}
@@ -346,10 +329,7 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
       {page.operators?.length ? (
         <section className="border-t border-white/10">
           <Container className="py-16 lg:py-24">
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-white/40">
-              Operators
-            </p>
-            <ul className="mt-10">
+            <ul>
               {page.operators.map((operator) => (
                 <li
                   key={operator.name}
@@ -423,10 +403,7 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
       {page.related?.length ? (
         <section className="border-t border-white/10">
           <Container className="py-12 lg:py-16">
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-white/40">
-              Continue
-            </p>
-            <ul className="mt-6">
+            <ul>
               {page.related.map((item) => (
                 <li key={item.href} className="border-b border-white/10">
                   <Link
@@ -455,10 +432,7 @@ export function EditorialPage({ page }: { page: EditorialPageData }) {
         <section className="bg-brand-yellow text-brand-black">
           <Container className="flex flex-col items-start justify-between gap-8 py-16 lg:flex-row lg:items-end lg:py-20">
             <div>
-              <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-black/50">
-                Next
-              </p>
-              <h2 className="display mt-4">Ready when you are.</h2>
+              <h2 className="display">Ready when you are.</h2>
             </div>
             <Button href={page.cta.href} variant="inverse" className="shrink-0">
               {page.cta.label}

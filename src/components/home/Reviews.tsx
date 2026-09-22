@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/Button";
-import { Container, SectionIndex } from "@/components/ui/Container";
+import { Container } from "@/components/ui/Container";
 import { reviews, site } from "@/lib/site";
 
 export function Reviews() {
@@ -27,9 +27,7 @@ export function Reviews() {
   return (
     <section className="border-b border-white/10 bg-brand-black">
       <Container className="py-20 lg:py-28">
-        <SectionIndex index="07" label="Reviews" />
-
-        <div className="mt-10 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+        <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <div>
             <p className="display-stat text-brand-yellow">{site.googleRating}</p>
             <p className="mt-3 text-xs font-medium uppercase tracking-[0.2em] text-brand-white/45">
@@ -53,7 +51,10 @@ export function Reviews() {
 
           <div className="lg:col-span-10">
             <blockquote>
-              <p className="text-2xl font-medium leading-snug tracking-tight text-brand-white sm:text-3xl lg:text-4xl lg:leading-[1.2]">
+              <p
+                key={index}
+                className="review-swap text-2xl font-medium leading-snug tracking-tight text-brand-white sm:text-3xl lg:text-4xl lg:leading-[1.2]"
+              >
                 “{review.quote}”
               </p>
               <footer className="mt-10 flex flex-col gap-1">
@@ -70,14 +71,14 @@ export function Reviews() {
               <button
                 type="button"
                 onClick={() => go(-1)}
-                className="h-12 px-5 text-xs font-medium uppercase tracking-[0.18em] text-brand-white ring-1 ring-white/20 transition-colors hover:bg-brand-white hover:text-brand-black"
+                className="chrome-press h-12 px-5 text-xs font-medium uppercase tracking-[0.18em] text-brand-white ring-1 ring-white/20 hover:bg-brand-white hover:text-brand-black"
               >
                 Prev
               </button>
               <button
                 type="button"
                 onClick={() => go(1)}
-                className="h-12 px-5 text-xs font-medium uppercase tracking-[0.18em] text-brand-white ring-1 ring-white/20 transition-colors hover:bg-brand-white hover:text-brand-black"
+                className="chrome-press h-12 px-5 text-xs font-medium uppercase tracking-[0.18em] text-brand-white ring-1 ring-white/20 hover:bg-brand-white hover:text-brand-black"
               >
                 Next
               </button>

@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
       "PADI SCUBA shop in Pensacola, FL. Training, gear, service, and the Gulf.",
     start_url: "/",
     display: "browser",
-    background_color: "#122440",
-    theme_color: "#122440",
+    background_color: "#05070e",
+    theme_color: "#05070e",
     lang: "en-US",
     icons: [
       {

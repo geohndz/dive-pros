@@ -28,7 +28,7 @@ export function Footer() {
 
           <div className="grid gap-10 sm:grid-cols-2 lg:col-span-8 lg:grid-cols-3">
             <div>
-              <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-white/40">
+              <p className="font-sans text-xs font-medium uppercase tracking-[0.2em] text-brand-white/40">
                 Navigation
               </p>
               <ul className="mt-4 space-y-2">

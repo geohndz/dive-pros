@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container, SectionIndex } from "@/components/ui/Container";
+import { Container } from "@/components/ui/Container";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { objectPosition } from "@/lib/image-focus";
 import { pageMetadata, staticPageJsonLd } from "@/lib/seo";
@@ -85,8 +85,7 @@ export default function GalleryPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/50 to-brand-black/25" />
         <Container className="relative flex min-h-[70vh] flex-col justify-end pb-12 pt-[calc(var(--header-height)+2rem)] lg:min-h-[82vh] lg:pb-16">
-          <SectionIndex index="-" label="Gallery" />
-          <h1 className="display mt-6 max-w-4xl text-brand-white">
+          <h1 className="display max-w-4xl text-brand-white">
             The water we work in
           </h1>
         </Container>

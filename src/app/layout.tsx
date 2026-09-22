@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Oxanium } from "next/font/google";
 import { Header } from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
-import { WaterDepth } from "@/components/motion/WaterDepth";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, homeDescription, siteJsonLd } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -15,7 +14,7 @@ const oxanium = Oxanium({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#122440",
+  themeColor: "#05070e",
   width: "device-width",
   initialScale: 1,
 };
@@ -85,7 +84,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-US" className={`${oxanium.variable} h-full antialiased`}>
+    <html
+      lang="en-US"
+      className={`${oxanium.variable} h-full antialiased`}
+    >
       <body className="min-h-full font-sans">
         <JsonLd data={siteJsonLd()} />
         <a
@@ -94,9 +96,10 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        <WaterDepth />
         <Header />
-        <main id="main">{children}</main>
+        <main id="main" className="overflow-x-clip">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

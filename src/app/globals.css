@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --brand-navy-surface: #122440;
-  --brand-navy-abyss: #02060f;
-  --brand-black: var(--brand-navy-surface);
+  --brand-navy-surface: #05070e;
+  --brand-black: #05070e;
   --brand-white: #ffffff;
   --brand-yellow: #fffa3b;
   --brand-gray: #5e5e5e;
@@ -15,6 +14,11 @@
   --height-button: 48px;
   --font-size-button: 16px;
   --header-height: 88px;
+  --page-gutter: 1.25rem;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --duration-press: 160ms;
+  --duration-ui: 200ms;
 }
 
 @theme inline {
@@ -57,6 +61,13 @@ body {
   text-wrap: pretty;
 }
 
+.log {
+  max-width: 38rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
 .display-sm {
   font-size: clamp(2.1rem, 3.5vw, 3.4rem);
 }
@@ -78,7 +89,7 @@ body {
   width: 145%;
   transform: translateX(calc(-100% - 3.5rem)) skewX(-22deg);
   transform-origin: left center;
-  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform 700ms var(--ease-out);
 }
 
 .btn-swoosh-fill {
@@ -161,7 +172,7 @@ body {
   overflow: hidden;
   padding-inline: 1.25rem;
   transform-origin: left center;
-  transition: transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform 200ms var(--ease-out);
 }
 
 .swoosh-row .btn-swoosh {
@@ -175,14 +186,13 @@ body {
 .swoosh-row:hover,
 .swoosh-row:focus-visible {
   z-index: 2;
-  transform: scale(1.035);
   color: var(--brand-black);
 }
 
 @keyframes hero-fade-up {
   from {
     opacity: 0;
-    transform: translateY(18px);
+    transform: translateY(14px);
   }
   to {
     opacity: 1;
@@ -209,11 +219,11 @@ body {
 }
 
 .animate-hero-fade-up {
-  animation: hero-fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: hero-fade-up 0.7s var(--ease-out) both;
 }
 
 .animate-hero-fade-in {
-  animation: hero-fade-in 1s ease-out both;
+  animation: hero-fade-in 1s var(--ease-out) both;
 }
 
 .animate-hero-delay-1 {
@@ -248,6 +258,75 @@ body {
   animation: offering-progress 8s linear forwards;
 }
 
+.drawer-overlay {
+  transition: opacity 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.drawer-panel {
+  transform: translateX(100%);
+  opacity: 1;
+  transition:
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.drawer-panel[data-entered="true"] {
+  transform: translateX(0);
+}
+
+[dir="rtl"] .drawer-panel {
+  transform: translateX(-100%);
+}
+
+[dir="rtl"] .drawer-panel[data-entered="true"] {
+  transform: translateX(0);
+}
+
+.nav-fold {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 250ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-fold[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+
+.nav-fold-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+@keyframes review-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.review-swap {
+  animation: review-fade-in 250ms ease-out both;
+}
+
+.chrome-press {
+  transition:
+    transform var(--duration-press) var(--ease-out),
+    background-color var(--duration-press) var(--ease-out),
+    color var(--duration-press) var(--ease-out);
+}
+
+.chrome-press:active {
+  transform: scale(0.97);
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --page-gutter: 2.5rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -267,6 +346,36 @@ body {
     transform: scaleX(1);
   }
 
+  .drawer-overlay {
+    transition-duration: 200ms;
+  }
+
+  .drawer-panel {
+    transform: none;
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+  }
+
+  .drawer-panel[data-entered="true"] {
+    opacity: 1;
+  }
+
+  .nav-fold {
+    transition: none;
+  }
+
+  .review-swap {
+    animation-duration: 150ms;
+  }
+
+  .chrome-press {
+    transition: none;
+  }
+
+  .chrome-press:active {
+    transform: none;
+  }
+
   .btn-swoosh {
     transition: none;
   }
@@ -275,8 +384,4 @@ body {
     transition: none;
   }
 
-  .swoosh-row:hover,
-  .swoosh-row:focus-visible {
-    transform: none;
-  }
 }

@@ -24,10 +24,7 @@ export function ServiceCards({ cards }: { cards: PageCard[] }) {
               />
             </div>
             <div className="flex min-w-0 flex-1 flex-col justify-center px-4 py-4 lg:px-5">
-              <p className="text-[0.65rem] font-medium uppercase tracking-[0.22em] text-brand-yellow">
-                {card.index}
-              </p>
-              <h3 className="mt-1.5 flex items-center justify-between gap-2 text-sm font-bold uppercase tracking-wide text-brand-white sm:text-base">
+              <h3 className="flex items-center justify-between gap-2 text-sm font-bold uppercase tracking-wide text-brand-white sm:text-base">
                 {card.title}
                 <ArrowUpRight className="size-4 shrink-0 text-brand-white/40 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-brand-yellow" />
               </h3>

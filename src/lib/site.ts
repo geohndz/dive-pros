@@ -66,7 +66,6 @@ export const stats = [
 
 export const offerings = [
   {
-    index: "001",
     title: "Training",
     href: "/courses",
     cta: "View courses",
@@ -75,7 +74,6 @@ export const offerings = [
     body: "You start in a 12′ indoor heated tank. Classrooms are a few steps away. New Open Water classes start every week.",
   },
   {
-    index: "002",
     title: "Service",
     href: "/shop/repairs",
     cta: "View service pricing",
@@ -84,7 +82,6 @@ export const offerings = [
     body: "SCUBA is life support. Factory-trained technicians service most major lines. Most kits are back in the water in under a week.",
   },
   {
-    index: "003",
     title: "Charters",
     href: "/dive/charters",
     cta: "Plan a charter",
@@ -93,7 +90,6 @@ export const offerings = [
     body: "Local boats run wrecks and reefs when the weather allows. That includes the 911-foot USS Oriskany.",
   },
   {
-    index: "004",
     title: "Dive sites",
     href: "/dive",
     cta: "See dive sites",
@@ -195,22 +191,22 @@ export const diveSites = [
 
 export const processSteps = [
   {
-    index: "001",
+    index: "1",
     title: "Talk to us",
     body: "Walk in or call. Tell us your goals, your schedule, and whether you've ever been underwater.",
   },
   {
-    index: "002",
+    index: "2",
     title: "Learn on site",
     body: "eLearning at your pace. Then pool and classroom here: 54,000 gallons, 12′ deep, heated, indoor.",
   },
   {
-    index: "003",
+    index: "3",
     title: "Dive the Gulf",
     body: "Four open-water dives over two days on local sites. Gear is provided. Weather and tides set the clock.",
   },
   {
-    index: "004",
+    index: "4",
     title: "Keep diving",
     body: "Fills, service, rentals, charters, specialties. The shop that certified you is still here when you need a wrench or a boat.",
   },

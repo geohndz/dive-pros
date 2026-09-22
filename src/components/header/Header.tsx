@@ -51,17 +51,10 @@ export function Header() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 
-  useEffect(() => {
-    document.body.style.overflow = mobileOpen ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [mobileOpen]);
-
   return (
     <>
       <header
-        className="fixed inset-x-0 top-0 z-40 bg-brand-black"
+        className="fixed inset-x-0 top-0 z-40 bg-brand-black font-sans"
         onMouseLeave={scheduleClose}
       >
         <div className="relative mx-auto flex h-[var(--header-height)] max-w-[1440px] items-center justify-between px-5 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:px-10">
@@ -131,7 +124,7 @@ export function Header() {
             </div>
             <button
               type="button"
-              className="inline-flex h-12 w-12 items-center justify-center text-brand-white transition-colors hover:bg-brand-white/10 lg:hidden"
+              className="chrome-press inline-flex h-12 w-12 items-center justify-center text-brand-white hover:bg-brand-white/10 lg:hidden"
               aria-label="Open menu"
               aria-expanded={mobileOpen}
               onClick={() => setMobileOpen(true)}

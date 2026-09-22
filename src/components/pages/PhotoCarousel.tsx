@@ -87,14 +87,14 @@ export function PhotoCarousel({
             <button
               type="button"
               onClick={() => go(-1)}
-              className="h-12 px-5 text-xs font-medium uppercase tracking-[0.18em] text-brand-white ring-1 ring-white/20 transition-colors hover:bg-brand-white hover:text-brand-black"
+              className="chrome-press h-12 px-5 text-xs font-medium uppercase tracking-[0.18em] text-brand-white ring-1 ring-white/20 hover:bg-brand-white hover:text-brand-black"
             >
               Prev
             </button>
             <button
               type="button"
               onClick={() => go(1)}
-              className="h-12 px-5 text-xs font-medium uppercase tracking-[0.18em] text-brand-white ring-1 ring-white/20 transition-colors hover:bg-brand-white hover:text-brand-black"
+              className="chrome-press h-12 px-5 text-xs font-medium uppercase tracking-[0.18em] text-brand-white ring-1 ring-white/20 hover:bg-brand-white hover:text-brand-black"
             >
               Next
             </button>

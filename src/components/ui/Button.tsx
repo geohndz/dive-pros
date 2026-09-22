@@ -40,7 +40,7 @@ function buttonClassName({
   variant = "primary",
 }: SharedProps) {
   return cx(
-    "btn relative isolate inline-flex h-12 shrink-0 items-center justify-center overflow-hidden whitespace-nowrap px-6 text-base font-medium transition-colors duration-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 active:translate-y-px",
+    "btn relative isolate inline-flex h-12 shrink-0 items-center justify-center overflow-hidden whitespace-nowrap px-6 font-sans text-base font-medium transition-colors duration-200 ease-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 active:scale-[0.97]",
     variantClass[variant],
     fullWidth ? "w-full" : "w-fit",
     className,
