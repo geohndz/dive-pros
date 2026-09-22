@@ -29,7 +29,7 @@ Living reference for brand tokens and UI patterns. Update this document as each 
 
 | Token | CSS variable | Hex | Usage |
 |-------|--------------|-----|--------|
-| Navy | `--color-brand-black` | `#05070E` | Page ground. Near-black navy. Static — does not change on scroll. |
+| Navy | `--color-brand-black` | `#06101E` → `#05070E` | Page ground. Gulf navy at the top; darkens toward almost-black as you scroll. |
 | White | `--color-brand-white` | `#FFFFFF` | Type on dark, courses panel, mega nav |
 | Yellow | `--color-brand-yellow` | `#FFFA3B` | Primary CTAs, accent words, indexes, visit band |
 | Gray | `--color-brand-gray` | `#5E5E5E` | Mega column headers, secondary labels on light |
@@ -105,6 +105,7 @@ Emil’s frequency gate. Tokens: `--ease-out`, `--duration-press` 160ms, `--dura
 | Effect | Where | Notes |
 |--------|--------|--------|
 | Droplets | Hero | WebGL2; respects `prefers-reduced-motion` |
+| Water depth | Page ground | `#06101E` → `#05070E` on scroll; off if reduced motion |
 | Fade / rise-in | Hero | CSS on load only |
 | Offering photo | Shop | 200ms opacity; hover/focus only |
 | Sites grow | Desktop | One accordion interaction |

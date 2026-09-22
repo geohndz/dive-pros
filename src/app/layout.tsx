@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Oxanium } from "next/font/google";
 import { Header } from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
+import { WaterDepth } from "@/components/motion/WaterDepth";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, homeDescription, siteJsonLd } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -14,7 +15,7 @@ const oxanium = Oxanium({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#05070e",
+  themeColor: "#06101e",
   width: "device-width",
   initialScale: 1,
 };
@@ -89,6 +90,7 @@ export default function RootLayout({
       className={`${oxanium.variable} h-full antialiased`}
     >
       <body className="min-h-full font-sans">
+        <WaterDepth />
         <JsonLd data={siteJsonLd()} />
         <a
           href="#main"
